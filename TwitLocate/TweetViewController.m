@@ -53,7 +53,7 @@
                                        @"Authorization":[NSString stringWithFormat:@"Bearer %@",token]
                                        }];
     
-    NSString* urlToCall = [NSString stringWithFormat:@"https://api.twitter.com/1.1/search/tweets.json?q=&geocode=40.973543,29.073143,%dkm&count=20", self.selectedKm];
+    NSString* urlToCall = [NSString stringWithFormat:@"https://api.twitter.com/1.1/search/tweets.json?q=&geocode=41.068861,29.0105796,%dkm&count=20", self.selectedKm];
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:urlToCall]];
     NSURLSession* session = [NSURLSession sessionWithConfiguration:config];
     
@@ -102,8 +102,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return self.allTweets.count;
-    return 0;
+    return self.allTweets.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

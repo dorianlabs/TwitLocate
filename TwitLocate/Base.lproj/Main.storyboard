@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZS5-Od-QTv">
-                                <rect key="frame" x="53" y="72" width="87" height="76"/>
+                                <rect key="frame" x="23" y="71" width="87" height="76"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgA-OC-0uc">
                                 <rect key="frame" x="53" y="172" width="239" height="21"/>
@@ -92,15 +92,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-We-Xa4">
-                                <rect key="frame" x="150" y="36" width="240" height="128"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="desc" destination="TBZ-w2-WXa" id="i1v-IT-nIq"/>
-                        <outlet property="mapper" destination="V0H-We-Xa4" id="PuQ-eF-hsY"/>
                         <outlet property="name" destination="dgA-OC-0uc" id="x5b-IX-zeg"/>
                         <outlet property="profile" destination="ZS5-Od-QTv" id="aJv-fl-6M9"/>
                     </connections>
